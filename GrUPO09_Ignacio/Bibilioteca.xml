@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca SYSTEM "01_DTD_biblioteca.dtd">
 
+
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation= "02_XSD_biblioteca.xsd">
+            xsi:noNamespaceSchemaLocation="02_XSD_biblioteca.xsd">
     <nombre> BIBLIOTECA GRUPO09 </nombre>
     <documentos> Libros, revistas y periódicos </documentos>
     <especificaciones> Abierto todos los días. Público de todas las edades</especificaciones>

@@ -1,41 +1,61 @@
-<!ELEMENT biblioteca (libros,revistas,periódicos)>
 
-<!ELEMENT libro (titulo, tipo_clase, capitulos, indice, sinopsis)>
-<!ATTLIST libro id ID CDATA #REQUIRED>
+<!ELEMENT biblioteca (nombre, documentos, especificaciones, horario_especial, libros, revistas, periódicos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT documentos (#PCDATA)>
+<!ELEMENT especificaciones (#PCDATA)>
+<!ELEMENT horario_especial (#PCDATA)>
+
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, capitulos, indice, sinopsis)>
+<!ATTLIST libro id ID #REQUIRED>
 <!ATTLIST libro tipo_clase (novela|infantil|didactico) #REQUIRED>
+
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT capitulos (capitulo+)>
 <!ELEMENT capitulo (titulo_cap, contenido)>
 <!ATTLIST capitulo num_paginas CDATA #REQUIRED>
+
 <!ELEMENT titulo_cap (#PCDATA)>
-<!ELEMENT contenido EMPTY>
+<!ELEMENT contenido (#PCDATA)>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
+
 <!ELEMENT indice (#PCDATA)>
-<!ATTLIST indice enlace CDATA>
+<!ATTLIST indice enlace CDATA #REQUIRED>
+
 <!ELEMENT sinopsis (#PCDATA)>
 
+<!ELEMENT revistas (revista+)>
 <!ELEMENT revista (titulo, numero_revista, indice, secciones)>
-<!ATTLIST revista id ID CDATA #REQUIRED>
-<!ATTLIST revista tipo_clase_r (informatica|corazon|coches|investigacion|otras) #REQUIRED>
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista tipo_clase_r (informatica|corazón|coches|investigacion|otras) #REQUIRED>
 
-
-<!ELEMENT titulo (#PCDATA)>
 <!ELEMENT numero_revista (#PCDATA)>
-<!ELEMENT indice (#PCDATA)>
-<!ATTLIST indice enlace  CDATA>  
 <!ELEMENT secciones (seccion+)>
+
 <!ELEMENT seccion (titulo, contenido)>
-<!ATTLIST seccion tipo CDATA>
+<!ATTLIST seccion tipo CDATA #REQUIRED>
 <!ATTLIST seccion num_paginas CDATA #REQUIRED>
-<!ELEMENT contenido EMPTY>
+
+<!ELEMENT periódicos (periódico+)>
+<!ELEMENT periódico (secciones, índice)>
+<!ATTLIST periódico id ID #REQUIRED>
+<!ATTLIST periódico tipo_clase_p (nacional|internacional) #REQUIRED>
+<!ELEMENT fecha_publicación (#PCDATA)>
+<!ELEMENT secciones (sección+)>
+
+<!ELEMENT sección (artículo, contenido)>
+
+
+<!ATTLIST sección tipo (ciencia y salud|deportes|internacional|europa|oceania) CDATA #REQUIRED>
+
+
+
+<!ELEMENT artículo (#PCDATA)>
+<!ATTLIST artículo autor (Teresa guerrero | Abraham P. Romero | Pepe | EFE) CDATA #REQUIRED>
+
+
+<!ELEMENT contenido (#PCDATA)>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
 
-<!ELEMENT periódico (secciones,indice)>
-<!ATTLIST periódico id ID CDATA #REQUIRED>
-<!ATTLIST periódico tipo_clase_p (nacional|internacional) #REQUIRED>
-<!ELEMENT fecha_publicacion (#PCDATA)>
-<!ELEMENT secciones (sección+)>
-<!ELEMENT sección (articulo, contenido)>
-<!ATTLIST sección tipo (ciencia y salud | deportes | internacional | europa | oceania ) #REQUIRED>
-<!ELEMENT contenido EMPTY>
-<!ATTLIST contenido enlace CDATA #REQUIRED>
+<!ELEMENT índice (#PCDATA)>
+<!ATTLIST índice enlace CDATA #REQUIRED>
