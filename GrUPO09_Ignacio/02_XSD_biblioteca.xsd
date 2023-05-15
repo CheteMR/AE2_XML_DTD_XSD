@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name ="titulo" type="xs:string"/>
+                <xs:element name ="titulo_cap" type="xs:string"/>
+                <xs:element name ="contenido" type="xs:string"/>
+                <xs:element name ="indice" type="xs:string"/>
+                <xs:element name ="sinopsis" type="xs:string"/>
+                
+            </xs:sequence>
+            <xs:attribute name ="id" type="xs:string" use="required"/>
+            <xs:attribute name="tipo_clase" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="revista">
+        <xs:complexType>
+            <xs:sequence>
+                 <xs:element name ="titulo" type="xs:string"/>
+                 <xs:element name ="numero_revista" type="xs:integer"/>
+                 <xs:element name ="contenido" type="xs:string"/>
+                 <xs:element name ="indice" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name ="id" type="xs:string" use="required"/>
+            <xs:attribute name="tipo_clase_r" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="periódico">
+        <xs:complexType>
+            <xs:sequence>
+                 <xs:element name ="artículo" type="xs:string"/>
+                 <xs:element name ="contenido" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name ="id" type="xs:string" use="required"/>
+            <xs:attribute name="tipo_clase_p" type="xs:string" use="required"/>
+            <xs:attribute name="fecha_publicacion" type="xs:string" use="required"/>
+       </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+ 
+
+   
+
+ 

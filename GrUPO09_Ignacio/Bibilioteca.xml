@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "01_DTD_biblioteca.dtd">
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation= "02_XSD_biblioteca.xsd">
+    <nombre> BIBLIOTECA GRUPO09 </nombre>
+    <documentos> Libros, revistas y periódicos </documentos>
+    <especificaciones> Abierto todos los días. Público de todas las edades</especificaciones>
+    <horario_especial> Epóca de examénes abierto de 08:00 a 01:00 </horario_especial>
+
+    <!--Definimos la etiqueta libros con sus atributos -->
+ <libros>
+        <libro id="L0001" tipo_clase="novela">
+            <titulo>La comunidad del anillo</titulo>
+            <capitulos>
+                <capitulo num_paginas="30">
+                    <titulo_cap>Una reunión muy esperada</titulo_cap>
+                    <contenido enlace="https://web.seducoahuila.gob.mx/biblioweb/upload/J.R.R.%20Tolkien%20La%20Comunidad%20del%20anillo%20I.pdf">Contenido de Una reunión muy esperada</contenido>
+                </capitulo>
+                <capitulo num_paginas="31">
+                    <titulo_cap>La sombra del pasado</titulo_cap>
+                    <contenido enlace="https://web.seducoahuila.gob.mx/biblioweb/upload/J.R.R.%20Tolkien%20La%20Comunidad%20del%20anillo%20I.pdf">Contenido de La sombra del pasado</contenido>
+                </capitulo>
+            </capitulos>  
+                <indice enlace="https://web.seducoahuila.gob.mx/biblioweb/upload/J.R.R.%20Tolkien%20La%20Comunidad%20del%20anillo%20I.pdf">Índice de La comunidad del anillo</indice>
+                <sinopsis>Sinopsis de La Comunidad del anillo</sinopsis>
+        </libro>
+
+        <libro id="L0002" tipo_clase="infantil">
+            <titulo>Los tres cerditos</titulo>
+            <capitulos>
+                <capitulo num_paginas="4">
+                    <titulo_cap>El viaje de los cerditos</titulo_cap>
+                    <contenido enlace="https://www.lostrescerditosejemplo/cap1">Contenido de El viaje de los tres cerditos</contenido>
+                </capitulo>
+                <capitulo num_paginas="4">
+                    <titulo_cap>Los tres cerditos y el lobo</titulo_cap>
+                    <contenido enlace="https://www.lostrescerditosejemplo/cap2">Contenido de Los tres cerditos y el lobo</contenido>
+                </capitulo>
+            </capitulos>  
+                <indice enlace="https://ejemploindicelostrescerditos.com">Índice de Los tres cerditos</indice>
+                <sinopsis>Sinopsis de Los tres cerditos</sinopsis>
+        </libro>
+ </libros>
+
+ <!--Definimos la etiqueta revistas con sus atributos -->
+ <revistas>
+        <revista id="R0001" tipo_clase_r="informatica">
+            <titulo>Lenguajes de marcas</titulo>
+            <numero_revista>09</numero_revista>
+            <indice enlace="https://lenguajesdemarcas.com/indice">Índice de Lenguajes de marcas</indice>
+         <secciones>
+                <seccion tipo="XML" num_paginas="10">
+                    <titulo>Sección XML</titulo>
+                    <contenido enlace="https://XML.com/contenido">Contenido de la sección XML</contenido>
+                </seccion>
+         </secciones>
+        </revista>
+
+        <revista id="R0002" tipo_clase_r="corazón">
+            <titulo>MilCotilleos</titulo>
+            <numero_revista>05</numero_revista>
+            <indice enlace="https://milcotilleos.com/indice">Índice de Mil Cotilleos</indice>
+            <secciones>
+                <seccion tipo="famosos" num_paginas="15">
+                    <titulo>Sección famosos</titulo>
+                    <contenido enlace="https://famosos.com/contenido">Contenido de la sección famosos</contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0003" tipo_clase_r="coches">
+            <titulo>Mundo Motor</titulo>
+            <numero_revista>23</numero_revista>
+            <indice enlace="https://mundomotor.com/indice">Índice de Mundo Motor</indice>
+            <secciones>
+                <seccion tipo="Prueba audi" num_paginas="5">
+                    <titulo>Sección prueba audi</titulo>
+                    <contenido enlace="https://pruebaaudi.com/contenido">Contenido de la sección prueba audi</contenido>
+                </seccion>
+            </secciones>
+        </revista>    
+
+        <revista id="R0004" tipo_clase_r="investigacion">
+            <titulo>Ciencia</titulo>
+            <numero_revista>56</numero_revista>
+            <indice enlace="https://ciencia.com/indice">Índice de Ciencia</indice>
+            <secciones>
+                <seccion tipo="ciencia" num_paginas="10">
+                 <titulo>Sección ciencia a mogollón</titulo>
+                    <contenido enlace="https://cienciamogollon.com/contenido">Contenido de la sección Ciencia a Mogollón</contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+
+        <revista id="R0005" tipo_clase_r="otras">
+            <titulo>Informacion general</titulo>
+            <numero_revista>2</numero_revista>
+            <indice enlace="https://infogeneral.com/indice">Índice de Información general</indice>
+            <secciones>
+                <seccion tipo="informacion general otras" num_paginas="1">
+                    <titulo>Sección informacion general otras</titulo>
+                    <contenido enlace="https://infogeneralotras.com/contenido">Contenido de la sección Informacion general otras</contenido>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+
+    <!--Definimos la etiqueta periodicos con sus atributos -->
+
+    <periódicos>
+        <periódico id="P0001" tipo_clase_p="nacional" fecha_publicación="2023-05-15">
+            <secciones>
+                <sección tipo="ciencia y salud">
+                    <artículo autor="Teresa guerrero">Nanotecnología viva</artículo>
+                    <contenido enlace="https://www.elmundo.es/papel/el-mundo-que-viene/2023/05/09/645505b921efa06c788b4591.html"/>
+                </sección>
+                <sección tipo="deportes">
+                    <artículo autor="Abraham P. Romero">Madrid y Barça jugarán un Clásico veraniego en Estados Unidos... Con la Superliga de fondo</artículo>
+                    <contenido enlace="https://www.elmundo.es/deportes/futbol/2023/05/12/645e8141fc6c83ae518b45a3.html"/>
+                </sección>
+            </secciones>
+            <índice enlace="https://www.elmundo.es/"/>
+        </periódico>
+        <periódico id="P0002" tipo_clase_p="internacional" fecha_publicación="2023-05-15">
+            <secciones>
+                <sección tipo="europa">
+                    <artículo autor="Pepe">Polonia renombra Kaliningrado como gesto antirruso y ensalzamiento de su propia historia</artículo>
+                    <contenido enlace="https://www.elmundo.es/internacional/2023/05/12/645e5b66fc6c83ca628b45cd.html"/>
+                </sección>
+                <sección tipo="oceania">
+                    <artículo autor="EFE">Al menos 24 asesinados durante un conflicto tribal en Papúa Nueva Guinea</artículo>
+                    <contenido enlace="Al menos 24 asesinados durante un conflicto tribal en Papúa Nueva Guinea"/>
+                </sección>
+            </secciones>
+            <índice enlace="https://www.elmundo.es/internacional.html?intcmp=MENUHOM24801s_kw=internacional"/>
+        </periódico>
+    </periódicos>
+
+</biblioteca>
